@@ -1,0 +1,25 @@
+Partlist
+
+Exported from ARCAdaptor.brd at 4/8/13 11:14 PM
+
+EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part     Value            Package            Library                    Position (inch)       Orientation
+
+C1       22p              0805               SparkFun-Capacitors        (1.35 0.55)           R180
+C2       22p              0805               SparkFun-Capacitors        (1.5 0.55)            R90
+C3       100n             0805               SparkFun-Capacitors        (0 0)                 R0
+D1       3.6              SOT23              diode                      (0.8 0.25)            R0
+D2       3.6              SOT23              diode                      (1 0.25)              R0
+IC1      MEGA8-AI         TQFP32-08          atmel                      (1.85 0.8)            R0
+R1       68               0805               SparkFun-Resistors         (0.8 0.45)            R180
+R2       68               0805               SparkFun-Resistors         (1 0.45)              R180
+R3       1.5k             0805               SparkFun-Resistors         (0.6 0.6)             R180
+S1                        TACTILE_SWITCH_SMD SparkFun-Electromechanical (0 0)                 R0
+USB1     MOLEX-47346-0001 MOLEX-47364-0001   usb_con-update             (0.05 0.55)           R0
+X1                        MA08-2             con-lstb                   (0 0)                 R0
+X2                        MA08-2             con-lstb                   (0 0)                 R0
+X3                        MA05-2             con-lstb                   (0 0)                 R0
+Y1       12 Mhz           CRYSTAL-SMD-5X3    SparkFun-FreqCtrl          (1.45 0.4)            R180
