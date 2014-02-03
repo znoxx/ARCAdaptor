@@ -180,9 +180,15 @@ class UsbKeyboardDevice {
     usbSetInterrupt(reportBuffer, sizeof(reportBuffer));
 
   }
+  
+ /*Sending raw buffer. Added for ARCAdaptor*/
+ void sendBuffer(byte* keyBuffer) {
+       usbSetInterrupt(keyBuffer, BUFFER_SIZE);
+     }
+  
     
   //private: TODO: Make friend?
-  uchar    reportBuffer[4];    // buffer for HID reports [ 1 modifier byte + (len-1) key strokes]
+  uchar    reportBuffer[BUFFER_SIZE];    // buffer for HID reports [ 1 modifier byte + (len-1) key strokes] /*!Was 4*/
 
 };
 
