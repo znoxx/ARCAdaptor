@@ -10,3 +10,5 @@ No need of separate object compilation, as stated in original README (thanks to 
 Tested on MAC and partially on Windows.
 
 TODO: Meaningfull comments.
+
+03-Feb-2014: Added sendBuffer method for usbKeyboard to support buffered output
