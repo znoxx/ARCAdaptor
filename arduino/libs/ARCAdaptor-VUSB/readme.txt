@@ -11,4 +11,5 @@ Tested on MAC and partially on Windows.
 
 TODO: Meaningfull comments.
 
+10-Feb-2014: Added patch for HIDSerial (https://github.com/rayshobby/hid-serial https://rayshobby.net/?p=7363)
 03-Feb-2014: Added sendBuffer method for usbKeyboard to support buffered output
