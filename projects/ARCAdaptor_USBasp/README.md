@@ -2,6 +2,7 @@ This project intended to adapt original USBasp programmer code with ARCAdaptor
 Original file from http://www.fischl.de/usbasp/ for preservation
 Directory "replacement" contains patched files - to compile - replace original content with them.
 Pins of ARCAdaptor used:
+
 X2-13 PB2 - Reset
 X2-15 PB3 - MOSI
 X1-3 PB4 - MISO
