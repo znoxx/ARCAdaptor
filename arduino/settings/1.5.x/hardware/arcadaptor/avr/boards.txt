@@ -1,0 +1,26 @@
+##############################################################
+
+arcadaptor.name=ARCAdaptor w/ ATmega8@12Mhz
+
+arcadaptor.upload.protocol=usbasp
+arcadaptor.upload.maximum_size=6144
+arcadaptor.upload.speed=19200
+
+arcadaptor.bootloader.low_fuses=0x9f
+arcadaptor.bootloader.high_fuses=0xc0
+arcadaptor.bootloader.file=usbasp/ATmegaBOOT8ax12.hex
+arcadaptor.bootloader.unlock_bits=0x3F
+arcadaptor.bootloader.lock_bits=0x0F
+
+arcadaptor.build.mcu=atmega8
+arcadaptor.build.f_cpu=12000000L
+arcadaptor.build.core=arduino:arduino
+arcadaptor.build.variant=arduino:standard
+
+arcadaptor.build.board=AVR_ARCADAPTOR
+
+arcadaptor.upload.tool=arduino:avrdude
+arcadaptor.bootloader.tool=arduino:avrdude
+
+
+
