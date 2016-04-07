@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <link rel="stylesheet" href="styles/colorbox.css" />
+    <title>ARCAdaptor EEPROM Editor v1.2</title>
+ </head>
+
+  <body>
+    <header>
+      <h3>
+        <center>
+          ARCAdaptor EEPROM Editor v1.2
+        </center>
+     </h3>
+    </header>
+    <section>
+    <table border="0" cellpadding="1" cellspacing="1">
+      <tbody>
+        <tr>
+          <td>
+            <img src="images/qwerty.png" id="qwerty" usemap="#qwerty" />
+             <map name="qwerty">
+               <area shape="rect" coords="7,9,34,33" href="#" id="KEY_Esc" />
+               <area shape="rect" coords="66,8,93,32" href="#" id="KEY_F1" />
+               <area shape="rect" coords="96,8,123,32" href="#" id="KEY_F2" />
+               <area shape="rect" coords="126,8,153,32" href="#" id="KEY_F3" />
+               <area shape="rect" coords="155,8,182,32" href="#" id="KEY_F4" />
+               <area shape="rect" coords="199,8,226,32" href="#" id="KEY_F5" />
+               <area shape="rect" coords="230,8,257,32" href="#" id="KEY_F6" />
+               <area shape="rect" coords="259,8,286,32" href="#" id="KEY_F7" />
+               <area shape="rect" coords="289,8,316,32" href="#" id="KEY_F8" />
+               <area shape="rect" coords="333,7,359,31" href="#" id="KEY_F9" />
+               <area shape="rect" coords="362,7,389,31" href="#" id="KEY_F10" />
+               <area shape="rect" coords="391,7,418,31" href="#" id="KEY_F11" />
+               <area shape="rect" coords="421,7,448,31" href="#" id="KEY_F12" />
+               <area shape="rect" coords="452,7,479,31" href="#" id="KEY_PrtScr" />
+               <area shape="rect" coords="482,7,509,31" href="#" id="KEY_ScrLck" />
+               <area shape="rect" coords="511,7,538,31" href="#" id="KEY_Pause" />
+               <area shape="rect" coords="6,49,33,73" href="#" id="KEY_Tilde" />
+               <area shape="rect" coords="37,49,64,73" href="#" id="KEY_1" />
+               <area shape="rect" coords="66,49,93,73" href="#" id="KEY_2" />
+               <area shape="rect" coords="96,49,123,73" href="#" id="KEY_3" />
+               <area shape="rect" coords="126,50,153,74" href="#" id="KEY_4" />
+               <area shape="rect" coords="155,49,182,73" href="#" id="KEY_5" />
+               <area shape="rect" coords="185,49,212,73" href="#" id="KEY_6" />
+               <area shape="rect" coords="214,49,241,73" href="#" id="KEY_7" />
+               <area shape="rect" coords="244,49,271,73" href="#" id="KEY_8" />
+               <area shape="rect" coords="274,49,301,73" href="#" id="KEY_9" />
+               <area shape="rect" coords="304,49,331,73" href="#" id="KEY_0" />
+               <area shape="rect" coords="333,49,360,73" href="#" id="KEY_Minus" />
+               <area shape="rect" coords="363,49,390,73" href="#" id="KEY_Equal" />
+               <area shape="rect" coords="393,49,420,73" href="#" id="KEY_BackSlash" />
+               <area shape="rect" coords="423,49,450,73" href="#" id="KEY_BackSpace" />
+               <area shape="rect" coords="234,75,261,99" href="#" id="KEY_U" />
+               <area shape="rect" coords="513,49,540,73" href="#" id="KEY_PageUp" />
+               <area shape="rect" coords="262,75,289,99" href="#" id="KEY_I" />
+               <area shape="rect" coords="485,74,512,98" href="#" id="KEY_End" />
+               <area shape="rect" coords="514,74,541,98" href="#" id="KEY_PageDown" />
+               <area shape="rect" coords="544,48,571,72" href="#" id="KEY_NumLock" />
+               <area shape="rect" coords="574,48,601,72" href="#" id="KEY_KP_Slash" />
+               <area shape="rect" coords="603,48,630,72" href="#" id="KEY_KP_Ast" />
+               <area shape="rect" coords="632,48,659,73" href="#" id="KEY_KP_Minus" />
+               <area shape="rect" coords="632,71,659,123" href="#" id="KEY_KP_Plus" />
+               <area shape="rect" coords="632,122,659,172" href="#" id="KEY_KP_Enter" />
+               <area shape="rect" coords="544,73,571,97" href="#" id="KEY_KP_7" />
+               <area shape="rect" coords="574,73,601,97" href="#" id="KEY_KP_8" />
+               <area shape="rect" coords="603,73,630,97" href="#" id="KEY_KP_9" />
+               <area shape="rect" coords="573,99,600,123" href="#" id="KEY_KP_5" />
+               <area shape="rect" coords="603,99,630,123" href="#" id="KEY_KP_6" />
+               <area shape="rect" coords="544,149,602,173" href="#" id="KEY_KP_0" />
+               <area shape="rect" coords="603,149,630,173" href="#" id="KEY_KP_Comma" />
+               <area shape="rect" coords="484,125,511,149" href="#" id="KEY_UpArrow" />
+               <area shape="rect" coords="453,150,480,174" href="#" id="KEY_LeftArrow" />
+               <area shape="rect" coords="484,149,511,173" href="#" id="KEY_DownArrow" />
+               <area shape="rect" coords="513,150,540,174" href="#" id="KEY_RightArrow" />
+               <area shape="rect" coords="381,75,408,99" href="#" id="KEY_RightBr" />
+               <area shape="rect" coords="352,74,379,98" href="#" id="KEY_LeftBr" />
+               <area shape="rect" coords="322,75,349,99" href="#" id="KEY_P" />
+               <area shape="rect" coords="292,75,319,99" href="#" id="KEY_O" />
+               <area shape="rect" coords="455,74,482,98" href="#" id="KEY_Del" />
+               <area shape="rect" coords="454,49,481,73" href="#" id="KEY_Ins" />
+               <area shape="rect" coords="174,75,201,99" href="#" id="KEY_T" />
+               <area shape="rect" coords="143,75,170,99" href="#" id="KEY_R" />
+               <area shape="rect" coords="114,75,141,99" href="#" id="KEY_E" />
+               <area shape="rect" coords="84,75,111,99" href="#" id="KEY_W" />
+               <area shape="rect" coords="55,75,82,99" href="#" id="KEY_Q" />
+               <area shape="rect" coords="9,75,53,99" href="#" id="KEY_Tab" />
+               <area shape="rect" coords="63,100,90,124" href="#" id="KEY_A" />
+               <area shape="rect" coords="92,100,119,124" href="#" id="KEY_S" />
+               <area shape="rect" coords="122,100,149,124" href="#" id="KEY_D" />
+               <area shape="rect" coords="151,101,178,125" href="#" id="KEY_F" />
+               <area shape="rect" coords="181,100,208,124" href="#" id="KEY_G" />
+               <area shape="rect" coords="211,100,238,124" href="#" id="KEY_H" />
+               <area shape="rect" coords="241,100,268,124" href="#" id="KEY_J" />
+               <area shape="rect" coords="269,100,296,124" href="#" id="KEY_K" />
+               <area shape="rect" coords="300,100,327,124" href="#" id="KEY_L" />
+               <area shape="rect" coords="358,100,385,124" href="#" id="KEY_Quotation" />
+               <area shape="rect" coords="388,100,450,124" href="#" id="KEY_Enter" />
+               <area shape="rect" coords="8,100,60,124" href="#" id="KEY_CapsLock" />
+               <area shape="rect" coords="203,75,230,99" href="#" id="KEY_Y" />
+               <area shape="rect" coords="103,125,130,149" href="#" id="KEY_X" />
+               <area shape="rect" coords="134,125,161,149" href="#" id="KEY_C" />
+               <area shape="rect" coords="164,125,190,149" href="#" id="KEY_V" />
+               <area shape="rect" coords="192,125,219,149" href="#" id="KEY_B" />
+               <area shape="rect" coords="73,125,100,149" href="#" id="KEY_Z" />
+               <area shape="rect" coords="252,125,279,149" href="#" id="KEY_M" />
+               <area shape="rect" coords="281,125,308,149" href="#" id="KEY_Comma" />
+               <area shape="rect" coords="311,125,338,149" href="#" id="KEY_Dot" />
+               <area shape="rect" coords="341,125,368,149" href="#" id="KEY_Slash" />
+               <area shape="rect" coords="222,125,249,149" href="#" id="KEY_N" />
+               <area shape="rect" coords="7,151,34,175" href="#" id="KEY_Application" />
+               <area shape="rect" coords="35,150,60,174" href="#" id="AC_VolumeUp" />
+               <area shape="rect" coords="60,151,86,175" href="#" id="AC_VolumeDown" />
+               <area shape="rect" coords="86,151,113,175" href="#" id="AC_Mute" />
+               <area shape="rect" coords="369,125,396,149" href="#" id="KEY_Euro" />
+               <area shape="rect" coords="119,151,320,175" href="#" id="KEY_Space" />
+               <area shape="rect" coords="342,150,395,174" href="#" id="KM_ALT_F4" />
+               <area shape="rect" coords="329,100,356,124" href="#" id="KEY_Semicolon" />
+               <area shape="rect" coords="398,150,448,174" href="#" id="KM_SHIFT_F7" />
+               <area shape="rect" coords="545,99,572,123" href="#" id="KEY_KP_4" />
+               <area shape="rect" coords="574,124,601,148" href="#" id="KEY_KP_2" />
+               <area shape="rect" coords="545,124,572,148" href="#" id="KEY_KP_1" />
+               <area shape="rect" coords="604,124,631,148" href="#" id="KEY_KP_3" />
+               <area shape="rect" coords="484,49,511,73" href="#" id="KEY_Home" />
+             </map>                               
+          </td>
+          <td>
+            <img src="images/pads.png" id="pads" usemap="#pads" />
+             <map name="pads">
+               <area shape="rect" coords="42,19,59,37" href="#" id="J1_Up" />
+               <area shape="rect" coords="64,39,81,57" href="#" id="J1_Right" />
+               <area shape="rect" coords="21,39,38,57" href="#" id="J1_Left" />
+               <area shape="rect" coords="42,62,59,80" href="#" id="J1_Down" />
+               <area shape="rect" coords="42,127,59,145" href="#" id="J2_Up" />
+               <area shape="rect" coords="64,147,81,165" href="#" id="J2_Right" />
+               <area shape="rect" coords="21,147,38,165" href="#" id="J2_Left" />
+               <area shape="rect" coords="42,170,59,188" href="#" id="J2_Down" />
+               <area shape="circle" coords="122,29,14" href="#" id="J1_Button1" />
+               <area shape="circle" coords="174,29,14" href="#" id="J1_Button2" />
+               <area shape="circle" coords="227,29,14" href="#" id="J1_Button3" />
+               <area shape="circle" coords="279,29,14" href="#" id="J1_Button4" />
+               <area shape="circle" coords="122,71,14" href="#" id="J1_Button5" />
+               <area shape="circle" coords="174,71,14" href="#" id="J1_Button6" />
+               <area shape="circle" coords="227,71,14" href="#" id="J1_Button7" />
+               <area shape="circle" coords="279,71,14" href="#" id="J1_Button8" />
+               <area shape="circle" coords="122,137,14" href="#" id="J2_Button1" />
+               <area shape="circle" coords="174,137,14" href="#" id="J2_Button2" />
+               <area shape="circle" coords="227,137,14" href="#" id="J2_Button3" />
+               <area shape="circle" coords="279,137,14" href="#" id="J2_Button4" />
+               <area shape="circle" coords="122,179,14" href="#" id="J2_Button5" />
+               <area shape="circle" coords="174,179,14" href="#" id="J2_Button6" />
+               <area shape="circle" coords="227,179,14" href="#" id="J2_Button7" />
+               <area shape="circle" coords="279,179,14" href="#" id="J2_Button8" />
+              </map>
+          </td>
+          <td>
+            <div id="getrom">
+              <a id="getrom" href="#">Get EEPROM image</a>
+            </div> 
+            <div id="getdef">
+              <a id="getdef" href="#">Set default values</a>
+            </div>
+            <div id="clearall">
+              <a id="clearall" href="#">Clear all</a>
+            </div>			
+            <div id="gethelp">
+              <a class="iframe cboxElement" id="gethelp" href="help.html">Get help</a>
+            </div> 
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </section>
+    <section>
+	  <header><h4>X1</h4></header>
+      <form id="pinsform" action="cgi-bin/eeprom.cgi" method="post">
+         <table>
+           <thead>
+             <tr>
+               <td>PIN</td>
+			   <td>1</td>
+			   <td>3</td>
+			   <td>5</td>
+			   <td>7</td>
+			   <td>9</td>
+			   <td>11</td>
+			   <td>13</td>
+			   <td>15</td>
+			 </tr>
+		   </thead>
+           <tbody>
+             <tr>
+               <td>NORMAL</td>
+               <td>
+			     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1N1" id="X1N1" type="text" />
+               </td>
+               <td>
+			     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1N2" id="X1N2" type="text" />
+               </td>
+               <td>
+			     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1N3" id="X1N3" type="text" />
+               </td>
+               <td>
+			     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1N4" id="X1N4" type="text" />
+               </td>
+               <td>
+			     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1N5" id="X1N5" type="text" />
+               </td>
+               <td>
+			     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1N6" id="X1N6" type="text" />
+               </td>
+               <td>
+			     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1N7" id="X1N7" type="text" />
+              </td>
+              <td>
+			    <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1N8" id="X1N8" type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>SHIFTED</td>
+              <td>
+			    <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1S1" id="X1S1" type="text" />
+              </td>
+              <td>
+			   <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1S2" id="X1S2" type="text" />
+              </td>
+              <td>
+			    <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1S3" id="X1S3" type="text" />
+             </td>
+             <td>
+			   <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1S4" id="X1S4" type="text" />
+             </td>
+             <td>
+			   <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1S5" id="X1S5" type="text" />
+             </td>
+             <td>
+			   <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1S6" id="X1S6" type="text" />
+             </td>
+             <td>
+			   <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1S7" id="X1S7" type="text" />
+            </td>
+            <td>
+			  <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X1S8" id="X1S8" type="text" />
+           </td>
+         </tr>
+       </tbody>
+     </table>
+ </section>
+ <section>
+   <header><h4>X2</h4></header>
+     <table>
+       <thead>
+          <tr>
+            <td>PIN</td>
+            <td>1</td>
+            <td>3</td>
+            <td>5</td>
+            <td>7</td>
+            <td>9</td>
+            <td>11</td>
+            <td>13</td>
+            <td>15</td>
+          </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>NORMAL</td>
+           <td><input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2N1" id="X2N1" type="text" />
+           </td>
+           <td><input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2N2" id="X2N2" type="text" />
+           </td>
+           <td><input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2N3" id="X2N3" type="text" />
+           </td>
+           <td><input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2N4" id="X2N4" type="text" />
+           </td>
+           <td><input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2N5" id="X2N5" type="text" />
+           </td>
+           <td><input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2N6" id="X2N6" type="text" />
+           </td>
+           <td><input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2N7" id="X2N7" type="text" />
+           </td>
+           <td><input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2N8" id="X2N8" type="text" />
+           </td>
+         </tr>
+         <tr>
+           <td>SHIFTED</td>
+           <td>
+		     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2S1" id="X2S1" type="text" />
+           </td>
+           <td>
+		     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2S2" id="X2S2" type="text" />
+           </td>
+           <td>
+		     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2S3" id="X2S3" type="text" />
+           </td>
+           <td>
+		     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2S4" id="X2S4" type="text" />
+           </td>
+           <td>
+		     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2S5" id="X2S5" type="text" />
+           </td>
+           <td>
+		     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2S6" id="X2S6" type="text" />
+           </td>
+           <td>
+		     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2S7" id="X2S7" type="text" />
+           </td>
+           <td>
+		     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X2S8" id="X2S8" type="text" />
+           </td>
+         </tr>
+       </tbody>
+     </table>
+   </section>
+   <section>
+     <header><h4>X3</h4></header>
+     <table>
+       <thead>
+         <tr>
+           <td>PIN</td>
+           <td>1</td>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>NORMAL</td>
+           <td>
+		     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X3N1" id="X3N1" type="text" />
+           </td>
+         </tr>
+         <tr>
+           <td>SHIFTED</td>
+           <td>
+		     <input class="droptarget"  readonly="readonly" placeholder="Drop here" name="X3S1" id="X3S1" type="text" />
+           </td>
+         </tr>
+       </tbody>
+     </table>
+   </form>
+ </section>
+</body>
+</html>
+

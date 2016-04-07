@@ -1,0 +1,29 @@
+area.draggable {
+    cursor:move;
+    display:block;
+}
+
+* {
+-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.normal_box
+{
+  color: black;
+  background-color: white;
+}
+
+.highlighted_box
+{
+  border-color: red;
+}
+
+.updated_box
+{
+  color: yellow;
+  background-color: green;
+}
