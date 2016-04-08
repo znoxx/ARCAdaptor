@@ -1,6 +1,6 @@
 # User manual for ARCAdaptor project
 
-In russian. Markdown version not in GFM format - *strict markdown* used.
+In Russian. Markdown version not in GFM format - *strict markdown* used.
 Pandoc is used for generation of HTML.
 * Install [pandoc](http://pandoc.org)
 * Run `make index.html` or `make`
