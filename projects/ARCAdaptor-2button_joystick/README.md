@@ -6,7 +6,7 @@ Since original ZX joystick  firmware is gone (http://narod.ru/disk/1762604000/ZX
 ### Changes introduced:
 * Pins moved to PORTB completely to avoid conflicts with existing USB connection (PD0/PD2)
 * Amount of buttons reduced to 2 (instead of 8), since, well it's not easy to find ZX joystick with more than 2 buttons :)
-& USB stack updated to latest version.
+* USB stack updated to latest version.
 
 #### Pinout of ARCAdaptor/ATMega connection 
 
