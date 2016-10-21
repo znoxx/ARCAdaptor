@@ -21,3 +21,6 @@ Right - X2-15/PB3
 Fire1 - X2-5/PB0
 
 Fire2 - X2-11/PB1
+
+Don't forget to connect GND
+
