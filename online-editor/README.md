@@ -13,6 +13,6 @@ Installation
 
 Use editor in your browser
 
-
+### Thank you for choosing ARCAdaptor
 
 
